@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /home/ashish/Downloads/ | grep -i -E \"image|ashish\" )",
+      "Read(//home/ashish/Downloads/**)",
+      "Bash(npm -v)",
+      "Bash(identify /home/ashish/Downloads/ashish.png)",
+      "Bash(python3 -c \"from PIL import Image; im=Image.open\\('/home/ashish/Downloads/ashish.png'\\); print\\(im.size, im.mode\\)\")",
+      "Bash(npm create *)",
+      "Bash(cd /tmp/claude-1000/-home-ashish-sites-ashish-portfolio/de71ec32-9ec4-4ecb-ba91-2e0d95ec2a70/scratchpad && rm -rf vite-scaffold && npm create vite@latest vite-scaffold -- --template react-ts 2>&1 | tail -40)",
+      "Bash(npm install *)",
+      "Bash(cp /home/ashish/Downloads/ashish.png /home/ashish/sites/ashish-portfolio/src/assets/ashish.png)",
+      "Bash(cp \"/home/ashish/Downloads/ASHISH_BHATT_2026_103754.pdf\" /home/ashish/sites/ashish-portfolio/public/Ashish_Bhatt_Resume.pdf)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(lsof -ti:5173 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)",
+      "Bash(disown)",
+      "Bash(timeout 30 bash -c 'until curl -sf http://localhost:5173 >/dev/null; do sleep 1; done')",
+      "Bash(which chromium-cli *)",
+      "Read(//usr/local/bin/**)",
+      "Bash(npx --no-install playwright --version)",
+      "Bash(python3 -c \"import playwright\")",
+      "Bash(npm ls *)",
+      "Read(//usr/local/lib/node_modules/**)",
+      "Bash(timeout 90 npx playwright install --with-deps chromium)",
+      "Bash(timeout 90 npx playwright install chromium)",
+      "Bash(node /tmp/claude-1000/-home-ashish-sites-ashish-portfolio/de71ec32-9ec4-4ecb-ba91-2e0d95ec2a70/scratchpad/screenshot.mjs)",
+      "Bash(node /home/ashish/sites/ashish-portfolio/.tmp-screenshot.mjs)",
+      "Bash(git ls-remote *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(git commit *)",
+      "Bash(xargs -I{} du -h {})"
+    ]
+  }
+}
