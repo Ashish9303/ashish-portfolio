@@ -11,7 +11,7 @@ export const profile = {
   phone: "+91-9785058004",
   linkedin: "https://www.linkedin.com/in/ashish-bhatt-061442106",
   github: "https://github.com/Ashish9303",
-  resumeFile: "/Ashish_Bhatt_Resume.pdf",
+  resumeFile: "/Ashish_Bhatt_Resume_Modern.pdf",
 };
 
 export const highlights = [
