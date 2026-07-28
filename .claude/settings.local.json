@@ -30,7 +30,10 @@
       "Bash(git ls-remote *)",
       "Bash(echo \"EXIT:$?\")",
       "Bash(git commit *)",
-      "Bash(xargs -I{} du -h {})"
+      "Bash(xargs -I{} du -h {})",
+      "Bash(git check-ignore *)",
+      "Bash(findmnt /)",
+      "Bash(echo \"exit:$?\")"
     ]
   }
 }

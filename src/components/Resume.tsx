@@ -30,8 +30,8 @@ export default function Resume() {
               <div style={{ color: "var(--text-hi)", fontWeight: 700 }}>{profile.name} — Resume</div>
               <div style={{ color: "var(--text-lo)", fontSize: "0.85rem" }}>
                 Full Stack Developer with 3+ years of experience in Node.js, Python, React and NestJS — CRM
-                platforms at scale, auth/SSO systems, and Generative AI reporting. Includes work history,
-                education, and projects.
+                platforms at scale, JWT/MFA authentication, and PayPal payment integrations. Includes work
+                history, education, and projects.
               </div>
             </div>
           </div>

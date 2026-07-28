@@ -2,9 +2,9 @@ export const profile = {
   name: "Ashish Bhatt",
   firstName: "Ashish",
   title: "Full Stack Web Developer",
-  tagline: "I build backend-heavy full-stack products that scale — from high-volume CRM pipelines to secure identity systems and AI-powered reporting.",
+  tagline: "I build backend-heavy full-stack products that scale — from high-volume CRM pipelines to secure authentication systems and integrated payment platforms.",
   summary:
-    "Full Stack Web Developer with 3+ years of experience designing scalable RESTful APIs and microservices in Node.js and Python. I've scaled a CRM backend to 500,000+ leads processed daily across 5+ marketing integrations, built JWT/OAuth2-based authentication and an SSO identity provider securing 20,000+ active users, and shipped Generative AI (RAG) features for automated report generation — turning messy backend problems into clean, documented, containerized services.",
+    "Full Stack Web Developer with 3+ years of experience designing scalable RESTful APIs and microservices in Node.js and Python. I've scaled a CRM backend to 500,000+ leads processed daily across 5+ marketing integrations, built JWT-based authentication with TOTP/HOTP multi-factor security for 20,000+ active users, and built a unified PayPal payment service for subscriptions, refunds and webhooks — turning messy backend problems into clean, documented, containerized services.",
   location: "Jaipur, Rajasthan, India",
   yearsExperience: "3+ Years Experience",
   email: "ashishbhatt9303@gmail.com",
@@ -28,12 +28,12 @@ export const highlights = [
   {
     title: "Auth & Identity Security",
     description:
-      "Built JWT access/refresh token auth with TOTP/HOTP MFA and an SSO (OAuth2) identity provider for multi-session logins, securing 20,000+ active users.",
+      "Built JWT access/refresh token auth with TOTP/HOTP multi-factor authentication, securing 20,000+ active users.",
   },
   {
-    title: "Generative AI & RAG",
+    title: "Payment Gateway Integration",
     description:
-      "Implemented Retrieval-Augmented Generation to automate context-aware report creation and cut manual sales-team effort.",
+      "Built a unified PayPal payment service handling subscriptions, one-time payments, refunds, voids and webhooks.",
   },
   {
     title: "Containerized Deployments",
@@ -78,8 +78,12 @@ export const techStack = [
     items: ["Docker", "Celery", "Git & GitHub", "Git Flow", "REST APIs"],
   },
   {
-    category: "Auth, Security & AI",
-    items: ["JWT", "OAuth2 / SSO", "TOTP / HOTP MFA", "Generative AI", "RAG"],
+    category: "Auth & Security",
+    items: ["JWT", "TOTP / HOTP MFA"],
+  },
+  {
+    category: "Payments",
+    items: ["PayPal API", "Webhooks", "Subscriptions & Refunds"],
   },
 ];
 
@@ -94,8 +98,7 @@ export const experience = [
       "Built and scaled a CRM backend for sales and marketing to handle 500,000+ leads daily, integrating seamlessly with 5+ external marketing platforms (Google Ads, Facebook Ads, LinkedIn Ads).",
       "Implemented lead-assignment algorithms that automated distribution of 100,000+ leads per day, cutting manual lead distribution by 40%.",
       "Built a JWT-based access/refresh token authentication system with TOTP/HOTP multi-factor authentication, capturing and logging login-device details to improve protection for 20,000+ active users.",
-      "Designed and built an SSO (OAuth2) identity provider enabling secure, concurrent multi-session logins across multiple client apps, with token revocation.",
-      "Implemented Generative AI with Retrieval-Augmented Generation (RAG) to automate report generation, reducing manual effort and improving sales-team productivity through AI-driven, context-aware reporting.",
+      "Built a unified PayPal payment service handling subscriptions, one-time payments, refunds, voids and webhooks.",
       "Integrated MongoDB with FastAPI using Pydantic models for efficient, validated data handling.",
       "Deployed containerized microservices with Docker and FastAPI Uvicorn/Gunicorn strategies.",
       "Used Redis and Celery for task queues, caching, and asynchronous background jobs.",
@@ -103,7 +106,7 @@ export const experience = [
       "Integrated Swagger/OpenAPI documentation across services, improving API testing and developer onboarding.",
       "Managed source control and code reviews via Git and GitHub, following Git Flow branching.",
     ],
-    tags: ["FastAPI", "Express.js", "NestJS", "MongoDB", "Docker", "Redis", "OAuth2/SSO", "RAG"],
+    tags: ["FastAPI", "Express.js", "NestJS", "MongoDB", "Docker", "Redis", "JWT/MFA", "PayPal"],
   },
   {
     period: "Feb 2023 — Jul 2023",
@@ -142,26 +145,26 @@ export const projects = [
     tags: ["NestJS", "Express.js", "MongoDB", "TypeScript"],
   },
   {
-    title: "Auth & SSO Identity Platform",
+    title: "JWT Authentication & MFA System",
     description:
-      "A JWT-based authentication system with multi-factor auth and an OAuth2 SSO identity provider shared across client apps.",
+      "A JWT-based authentication system with TOTP/HOTP multi-factor auth, protecting 20,000+ active users with login-device logging.",
     points: [
-      "JWT access/refresh tokens + TOTP/HOTP MFA",
-      "OAuth2 SSO with concurrent multi-session logins",
-      "Token revocation and login-device logging for 20,000+ users",
+      "JWT access/refresh tokens",
+      "TOTP/HOTP multi-factor authentication",
+      "Login-device logging for 20,000+ users",
     ],
-    tags: ["OAuth2", "JWT", "Node.js", "Security"],
+    tags: ["JWT", "Node.js", "Security"],
   },
   {
-    title: "Keystone — AI Report Generation",
+    title: "Payment Service",
     description:
-      "A Generative AI reporting tool using Retrieval-Augmented Generation (RAG) to automate context-aware report creation for the sales team.",
+      "A unified PayPal payment service for subscriptions, one-time payments, refunds, voids and webhooks.",
     points: [
-      "RAG pipeline for context-aware generation",
-      "Automated report drafting from underlying data",
-      "Reduced manual effort and improved sales-team productivity",
+      "PayPal integration for subscriptions & one-time payments",
+      "Automated refunds and voids",
+      "Webhook handling for real-time payment events",
     ],
-    tags: ["Generative AI", "RAG", "Python", "FastAPI"],
+    tags: ["PayPal", "Node.js", "Webhooks"],
   },
   {
     title: "RESTful Microservices Platform",
@@ -188,13 +191,13 @@ export const projects = [
   {
     title: "Horizon — Market Intelligence Platform",
     description:
-      "A data-driven market intelligence platform delivering interactive dashboards, reports, and forecasts across industries for strategic business decisions.",
+      "A data-driven market intelligence platform delivering interactive dashboards, reports, and forecasts across industries for strategic business decisions, with pages built using Next.js.",
     points: [
       "Interactive dashboards across industries",
+      "Pages built with Next.js for fast, SEO-friendly delivery",
       "Automated reporting and forecasting",
-      "Backend services powering data-driven insights",
     ],
-    tags: ["FastAPI", "MongoDB", "React.js", "Data"],
+    tags: ["Next.js", "FastAPI", "MongoDB", "Data"],
   },
   {
     title: "Hospital Database Intelligence Platform",
